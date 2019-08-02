@@ -1,0 +1,144 @@
+.div1 {
+  background-color: blue;
+  height: 5vh;
+}
+
+.div2 {
+  background-color: black;
+  height: 5vh
+}
+
+.static {
+  text-align: right;
+  cursor: pointer;
+}
+
+.securityOverview {
+  width : 20%;
+}
+
+.securityOverviewCell {
+  height : 16px;
+}
+
+.staticChart {
+  width : 750px
+}
+
+.mat-row {
+  min-height: 16px !important;
+  height: 16px !important;
+}
+
+.interactiveChart {
+  width : 750px
+}
+
+.mat-row {
+  height: 24px;
+  min-height: 24px;
+}
+
+.corporate {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+.priceContainer {
+  display: flex;
+  flex-direction: column;
+}
+.changeContainer {
+
+  width: 80%;
+}
+
+.corporatename {
+  margin-left: 5px;
+  width: 60%;
+}
+
+.lastPriceContainer {
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 55%;
+}
+
+.intro {
+  margin-left: 3px;
+  margin-right: 3px;
+  width: 55%;
+}
+
+.toprowdisplay {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.topcolumndisplay {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.chartcenter {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.counter-mobile {
+  width: 95%;
+}
+
+.leftpart {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+}
+
+.summary {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width : 100%;
+}
+
+.symbolcode {
+  margin-left: 3px;
+  margin-right: 3px;
+  width: 10%;
+}
+
+.priceChange {
+  display: flex;
+  flex-direction: row;
+  margin-left: 5px;
+  margin-right: 5px;
+  width: 5%;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.my-centered-dialog {
+  max-width: 80vw;
+
+.mat-dialog-container {
+  max-width: none;
+}
+}
+
+.interactive {
+  cursor: pointer;
+}
+
+.tableClass {
+  width: 100% !important;
+}
+
+
+.divider {
+  height : 5vh;
+}
+
+

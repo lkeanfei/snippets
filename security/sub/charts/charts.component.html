@@ -1,0 +1,37 @@
+<div *ngIf="showLogin; else templateName" fxFlexAlign="center">
+
+  <div fxLayout="row" fxLayoutAlign="center center">
+    <!--<button mat-button (click)="openDialog()">Sign In</button> or Register for FREE to view Shareholdings details!-->
+    <button mat-button routerLink="/login">Sign In</button> or <button mat-button routerLink="/register">Register for FREE</button> to view Charts details!
+  </div>
+
+</div>
+<ng-template #templateName>
+
+  <div fxLayout="column">
+    <div *ngIf="isLoading; else templateLoaded">
+      <mat-progress-spinner
+        class="example-margin"
+        [color]="color"
+        [mode]="mode"
+        [value]="value">
+      </mat-progress-spinner>
+    </div>
+    <ng-template #templateLoaded>
+      <highcharts-chart fxFlex
+                        [Highcharts]="Highstocks"
+
+                        [constructorType]="chartConstructor"
+                        [options]="interactiveChartOptions"
+
+                        [(update)]="interactiveUpdateFlag"
+                        [oneToOne]="interactiveOneToOneFlag"
+
+                        style="width: 100%; height: 400px; display: block;"
+      ></highcharts-chart>
+    </ng-template>
+  </div>
+
+
+
+</ng-template>

@@ -1,0 +1,26 @@
+.balancesheet {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.balancesheet-mobile {
+  width: 100%;
+  margin: 0 auto;
+  font-size: 50% ;
+}
+
+.font-mobile {
+  font-size: 70%;
+}
+
+
+.profitloss {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.cashflow {
+  width: 70%;
+  margin: 0 auto;
+}
+

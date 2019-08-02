@@ -1,0 +1,29 @@
+<div [ngClass]="isHandSet ? 'quarterlies-mobile' : 'quarterlies'">
+  <mat-table [dataSource]="quarterliesDataSource">
+    <ng-container *ngFor="let column of quarterliesColumns ; let colIndex = index" [matColumnDef]="column">
+      <mat-header-cell *matHeaderCellDef>{{ quarterliesColumns[colIndex] }}</mat-header-cell>
+      <mat-cell *matCellDef="let row" >
+        <div *ngIf="row[column]['type'] == 'float' else numberTemplate" >
+          <div [ngClass]="isHandSet ? 'font-mobile' : ''">
+            {{ row[column]['value'] | number:'1.2-3'}}
+          </div>
+
+        </div>
+        <ng-template #numberTemplate>
+          <div *ngIf="row[column]['type'] == 'number' else stringTemplate" >
+            <div [ngClass]="isHandSet ? 'font-mobile' : ''">
+              {{ row[column]['value'] | number}}
+            </div>
+          </div>
+        </ng-template>
+        <ng-template #stringTemplate>
+          <div [ngClass]="isHandSet ? 'font-mobile' : ''">
+            {{ row[column]['value']}}
+          </div>
+        </ng-template>
+      </mat-cell>
+    </ng-container>
+    <mat-header-row *matHeaderRowDef="quarterliesColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: quarterliesColumns;"></mat-row>
+  </mat-table>
+</div>

@@ -1,0 +1,20 @@
+.firsttabclass {
+  width: 15%;
+}
+
+.middletab {
+  width: 15%;
+}
+
+.alignmiddle {
+  width: 95%;
+  margin: 0 auto;
+}
+
+.market {
+  font-size: 100%;
+}
+
+.market-mobile {
+  font-size: 70%;
+}

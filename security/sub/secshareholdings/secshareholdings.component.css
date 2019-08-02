@@ -1,0 +1,77 @@
+
+
+.topborder {
+  border-top: 1px solid black;
+}
+
+.bottomborder {
+  border-bottom: 1px solid black;
+}
+.leftborder {
+  border-left: 1px solid black;
+  align-self: stretch;
+}
+.mat-header-cell {
+  min-height: 48px;
+  border-right: 1px solid black;
+  align-self: stretch;
+  justify-content: center !important;
+}
+
+.mat-column-numshareholders
+{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mat-column-sharespercentage
+{
+  display: flex;
+  justify-content: flex-end;
+  text-align: right !important;
+}
+
+.mat-column-shares
+{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.mat-column-percentage
+{
+  display: flex;
+  justify-content: flex-end !important;
+}
+
+.textAlignRight {
+  text-align: right !important;
+}
+
+.mat-cell-percentage
+{
+  display: flex;
+  justify-content: flex-end !important;
+}
+.mat-column-numshares {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.handsetfont {
+  font-size: 8px;
+}
+
+.table-class {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.table-mobile {
+  width : 95%;
+  margin: 0 auto;
+}
+
+.normalfont {
+  font-size: 16px;
+}
+
